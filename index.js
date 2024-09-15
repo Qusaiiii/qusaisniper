@@ -1,7 +1,18 @@
 const { Intents, Client } = require("discord.js-selfbot-v13")
 const configParse = require("./configParse")
 const buttonHandler = require("./buttonHandler")
+const express = require('express');
+const port = 3000;
+const app = express();
 
+
+app.listen(() => console.log("I'm Ready To Work..! 24H"));
+app.get('/', (req, res) => {
+  res.send(`
+  <body>
+  <center><h1>Bot 24H ON!</h1></center
+  </body>`)
+});
 const client = new Client({
   intents: [
     Intents.FLAGS.GUILDS,
