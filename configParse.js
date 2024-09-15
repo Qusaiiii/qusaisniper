@@ -7,7 +7,7 @@ const configParse = () => {
   let CHARACTERS = []
   let MIN_VALUE_CHARACTERS = 30
   let MIN_VALUE_KAKERA = 30
-  let TOKEN = ""
+  let TOKEN = process.env.TOKEN
   let MARRY_ALL_WISHED = false
 
   config.forEach((line) => {
